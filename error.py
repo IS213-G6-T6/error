@@ -23,7 +23,6 @@ class Error(db.Model):
     __tablename__ = 'errors'
 
     errorID = db.Column(db.Integer, primary_key=True)
-    orderID = db.Column(db.Integer, nullable=False)
     error_type = db.Column(db.String(255), nullable=False)
     error_info = db.Column(db.String(255), nullable=False)
     timestamp = db.Column(db.DateTime, default=datetime.now())
